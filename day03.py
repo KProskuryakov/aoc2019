@@ -28,11 +28,9 @@ class Wire:
 
 def manhattan(wire1: Wire, wire2: Wire):
     crosses = wire1.intersect(wire2)
-    dists = [abs(x) + abs(y) for x, y in crosses]
-    return min(dists)
+    return min(abs(x) + abs(y) for x, y in crosses)
 
 
 def fewest_steps(wire1: Wire, wire2: Wire):
     crosses = wire1.intersect(wire2)
-    dists = [wire1.steps_to(loc) + wire2.steps_to(loc) for loc in crosses]
-    return min(dists)
+    return min(wire1.steps_to(loc) + wire2.steps_to(loc) for loc in crosses)

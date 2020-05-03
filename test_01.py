@@ -1,4 +1,4 @@
-from day01 import calc_fuel, read_input, combined_fuel, recur_fuel, combined_fuel2
+from day01 import calc_fuel, read_input, combined_fuel, calc_fuel2
 
 
 def test_calc_fuel():
@@ -9,14 +9,14 @@ def test_calc_fuel():
 
 
 def test_combined_fuel():
-    assert combined_fuel("input01.txt") == 3515171
+    assert combined_fuel("input01.txt", calc_fuel) == 3515171
 
 
 def test_recur_fuel():
-    assert recur_fuel(14) == 2
-    assert recur_fuel(1969) == 966
-    assert recur_fuel(100756) == 50346
+    assert calc_fuel2(14) == 2
+    assert calc_fuel2(1969) == 966
+    assert calc_fuel2(100756) == 50346
 
 
 def test_combined_fuel2():
-    assert combined_fuel2("input01.txt") == 5269882
+    assert combined_fuel("input01.txt", calc_fuel2) == 5269882
