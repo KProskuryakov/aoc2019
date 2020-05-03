@@ -1,3 +1,8 @@
+# vscode project configs
+.vscode
+
+#### Python Ignores ####
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
