@@ -9,7 +9,7 @@ def test_calc_fuel():
 
 
 def test_combined_fuel():
-    assert combined_fuel("input01.txt", calc_fuel) == 3515171
+    assert combined_fuel("day01/input01.txt", calc_fuel) == 3515171
 
 
 def test_recur_fuel():
@@ -19,4 +19,4 @@ def test_recur_fuel():
 
 
 def test_combined_fuel2():
-    assert combined_fuel("input01.txt", calc_fuel2) == 5269882
+    assert combined_fuel("day01/input01.txt", calc_fuel2) == 5269882

@@ -35,14 +35,14 @@ def test_manhattan():
 
 
 def test_first_part():
-    with open("input03.txt") as f:
+    with open("day03/input03.txt") as f:
         wire1 = Wire(f.readline())
         wire2 = Wire(f.readline())
         assert manhattan(wire1, wire2) == 1225
 
 
 def test_second_part():
-    with open("input03.txt") as f:
+    with open("day03/input03.txt") as f:
         wire1 = Wire(f.readline())
         wire2 = Wire(f.readline())
         assert fewest_steps(wire1, wire2) == 107036

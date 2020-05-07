@@ -3,7 +3,7 @@ from copy import deepcopy
 
 
 def test_first_part():
-    program = IntCode("input02.txt")
+    program = IntCode("day02/input02.txt")
     program[1] = 12
     program[2] = 2
     program.process()
@@ -12,7 +12,7 @@ def test_first_part():
 
 
 def test_second_part():
-    program = IntCode("input02.txt")
+    program = IntCode("day02/input02.txt")
     for i in range(0, 100):
         for j in range(0, 100):
             cur = deepcopy(program)
